@@ -1,0 +1,103 @@
+/* common */
+body{
+  margin: 0;
+  }
+img{
+  vertical-align: bottom;
+}
+h1,
+h2,
+p{
+  margin: 0;
+}
+
+/* header */
+header{
+  background: #efefef;
+}
+
+header .container{
+ width: 400px;
+ margin: 0 auto;
+ padding: 32px 0;
+ display: flex;
+ align-items: center;
+}
+header .container div + nav{
+  margin-left: 32px;
+}
+header h1{
+  font-weight: normal;
+  font-size: 24px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  width: 64px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+header .icon{
+  border-radius:10%;
+}
+
+
+/* main */
+main .container{
+  width: 800px;
+  margin: 0 auto;
+}
+main h1{
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding: 40px 0;
+  /* margin: 40px 80px;
+  background: pink; */
+}
+section .container{
+  margin: 0 auto;
+  width: 800px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  background: #74992e;
+}
+main h2{
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 16px;
+}
+main p{
+  line-height: 1.8;
+  margin-top: 16px;
+}
+main section + section{
+   margin-top: 40px;
+}
+main div img{
+  width: 225px;
+  height: 169px;
+  padding: 1em;
+}
+main div video{
+  width: 225px;
+  height: 169px;
+  padding: 1em;
+}
+/*footer */
+footer{
+  padding: 60px 0;
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+
+
+

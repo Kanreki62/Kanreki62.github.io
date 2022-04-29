@@ -1,0 +1,137 @@
+html{
+  height: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+nav1 ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+  display:flex;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav1 a{
+  /* background: pink; */
+  width: 120px;
+  text-align: center;
+  line-height:48px;
+  display: block;
+}
+nav1 a:hover {
+   background: #eee;
+}
+
+h1{
+  --my-color: blue;
+  color: var(--my-color);
+  border-bottom: 3px solid var(--my-color);
+  text-align:center;
+}
+h2{
+  font-size:large;
+}
+main{
+  background: silver;
+  flex:1;
+  font-size:medium;
+  margin-bottom: 60px;
+  }
+.container{
+  display: flex;
+ }
+
+/* common */
+/* small screen */
+body{
+  /* margin:0; */
+  margin: 20px;
+}
+aside{
+  display: none;
+  }
+.pic{
+  width: 140px;
+  height: 180px;
+  /* flex:1; */
+  margin-right: 32px;
+}
+.desc{
+  /* flex: 1; */
+  width: calc(100%-400px-64px);
+  font-size: 18px;
+  font-weight: normal;
+  /* height: 100px; */
+  }
+
+/* medium screen */
+@media (min-width: 300px) {
+  section{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: spece-between;
+  }
+  section:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+/* large screen */
+@media (min-width: 900px){
+ body{
+   width: 900px;
+   margin: 0 auto;
+ }
+ aside{
+   display: block;
+   background: pink;
+   width: 200px;
+ }
+}
+
+
+.box{width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    padding: 10px;
+   flex-basis: auto;
+   max-width: 150px;
+   flex-grow: 1;
+}
+.box1{
+  background-color:orange;
+}
+.box2{
+  background-color:skyblue;
+}
+.box3{
+  background-color:pink;
+}
+.box4{
+  background-color:gray;
+}
+.box5{
+  background-color:yellow;
+}
+.box6{
+  background-color:green;
+}
+div{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  /* text-align: center; */
+  font-weight: bold;
+}
+main{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  /* text-align: center; */
+  font-weight: bold;
+}
+footer{
+  color: var(--my-color);
+  background: silver;
+}
